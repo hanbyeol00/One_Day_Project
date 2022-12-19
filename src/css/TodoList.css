@@ -1,0 +1,44 @@
+.Todo.List {
+  border-top: 2px solid rgb(13, 192, 192);
+  width: 100%;
+  text-align: left;
+  user-select: none;
+}
+.Todo.List tr {
+  display: grid;
+  grid-template-columns: 0.2fr 3fr 0.2fr;
+  padding: 10px;
+}
+.Todo.List tr:hover {
+  background-color: rgba(13, 192, 192, 0.2);
+}
+.Todo.List td.checked {
+  text-decoration: line-through;
+}
+.Todo.List button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.Todo.List tr:hover button {
+  opacity: 1;
+}
+.Todo.List div {
+  font-weight: 600;
+  color: rgb(13, 192, 192);
+  opacity: 0;
+}
+
+tr.checked div {
+  opacity: 1 !important;
+}
+
+tr.checked td {
+  text-decoration: line-through;
+  color: gray;
+}

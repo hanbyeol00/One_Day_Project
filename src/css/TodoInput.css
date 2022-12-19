@@ -1,0 +1,26 @@
+.Todo.input {
+  display: grid;
+  grid-template-columns: 3fr 0.3fr;
+  margin: 15px;
+}
+.Todo.input input,
+.Todo.input button {
+  padding: 12px;
+  border-radius: 5px;
+}
+.Todo.input input {
+  border: 1px solid #ddd;
+  outline: none;
+}
+.Todo.input input:hover {
+  background-color: #eee;
+}
+.Todo.input input:focus {
+  background-color: #ccc;
+}
+.Todo.input button {
+  background-color: rgb(13, 192, 192);
+  color: white;
+  border: none;
+  white-space: nowrap;
+}
