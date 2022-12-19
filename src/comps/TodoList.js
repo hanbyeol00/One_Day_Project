@@ -25,9 +25,13 @@ const TodoList = (props) => {
   const todoListView = todoList.map((todoData) => {
     return (
       <tr key={todoData.seq} data-seq={todoData.seq}>
-        <button onClick={deleteHandler}>&times;</button>
-        <td onClick={itemCheck}>{todoData.todo}</td>
-        <div>&#10003;</div>
+        <td className="button" onClick={deleteHandler}>
+          &times;
+        </td>
+        <td className="content" onClick={itemCheck}>
+          {todoData.todo}
+        </td>
+        <td className="check">&#10003;</td>
       </tr>
     );
   });

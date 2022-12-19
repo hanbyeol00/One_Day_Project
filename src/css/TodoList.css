@@ -12,10 +12,8 @@
 .Todo.List tr:hover {
   background-color: rgba(13, 192, 192, 0.2);
 }
-.Todo.List td.checked {
-  text-decoration: line-through;
-}
-.Todo.List button {
+
+.Todo.List td.button {
   background-color: transparent;
   border: none;
   color: red;
@@ -25,20 +23,20 @@
   transition: 0.5s;
 }
 
-.Todo.List tr:hover button {
+.Todo.List tr:hover td.button {
   opacity: 1;
 }
-.Todo.List div {
+.Todo.List td.check {
   font-weight: 600;
   color: rgb(13, 192, 192);
   opacity: 0;
 }
 
-tr.checked div {
+tr.checked td.check {
   opacity: 1 !important;
 }
 
-tr.checked td {
+tr.checked td.content {
   text-decoration: line-through;
   color: gray;
 }
